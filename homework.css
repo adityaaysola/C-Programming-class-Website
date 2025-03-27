@@ -1,0 +1,113 @@
+/* Reset all margin and padding to 0 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure that html and body have no margin or padding */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Full height to allow scrolling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* General body styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100%; /* Ensure content can extend beyond viewport */
+    text-align: center;
+}
+
+/* Full-width container */
+.assignment-container {
+    background-color: white;
+    padding: 40px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 0; /* Ensure no margin on top */
+}
+
+/* Title styling */
+h1 {
+    color: #d32f2f;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+/* Subtitles */
+h2 {
+    color: #d32f2f;
+    font-size: 24px;
+    margin-top: 30px;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 5px;
+}
+
+/* Problem description */
+h3 {
+    color: #555;
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+/* Paragraph text styling */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+/* Button styles */
+.back-button {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #b71c1c;
+}
+
+/* Optional border decoration for headings */
+h1::after {
+    content: "_________________________________________";
+    display: block;
+    margin-top: 15px;
+    color: #d32f2f;
+    font-size: 16px;
+}
+
+/* Full width layout for content */
+.assignment-container {
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Styling for problem lists */
+ul {
+    list-style-type: disc;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+}
